@@ -1,6 +1,6 @@
 import "./Home.css";
 import { Footer } from "../../components";
-import logo from "../../assets/ExtensryNBg.png";
+import logo from "../../assets/Daily Zen Logo Transparent.png";
 import { useBrowser } from "../../context/browser-context";
 
 export const Home = () => {
@@ -23,10 +23,10 @@ export const Home = () => {
     return (
     <div className="home-container d-flex direction-column align-center gap">
         <div className="logo-container">
-            <img className="logo logo-props" src={logo} alt="logo"/>
+            <img className="logo logo-props" src={logo} alt="logo" style={{width:"300px"}} />
         </div>
         <div className="user-name-continer">
-            <h1 className="heading-1 main-heading">Hello, what's your name?</h1>
+            <h1 className="heading-1 main-heading">Hi! What Should We Call You?</h1>
             <form onSubmit={handleSubmit}>
                 <input 
                     value={name}

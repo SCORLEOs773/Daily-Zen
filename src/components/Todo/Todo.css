@@ -44,10 +44,12 @@
   
 .strike {
     text-decoration: line-through;
+    color: green;
 }
 
 .close-btn {
     font-size: 1rem;
+    color: red;
 }
 
 

@@ -121,18 +121,33 @@ export const Task = () => {
     else if (todoStatus === "false") setIsTodoOpen(false)
   }, [])
 
+  function titleCase(str) {
+    str = str.toLowerCase().split(' ');
+    for (let i = 0; i < str.length; i++) {
+        str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+    }
+    return str.join(' ');
+}
+
 
   return (
     <div className="task-container d-flex direction-column align-center">
+
+      <img
+        src="Daily Zen Logo Transparent.png"
+        alt="Left Top Image"
+        className="left-top-image"
+      />
+      
       <Weather />
       <span className=" time">{time}</span>
       <span className="heading-2 message">
-        {message}, {name}
+        {titleCase(message)}, {titleCase(name)}
       </span>
       {name !== null && task === null ? (
         <Fragment>
           <span className="heading-3 focus-question">
-            What is your main focus for today?
+            Your Main Focus Of The Day?
           </span>
 
           <form
@@ -181,7 +196,7 @@ export const Task = () => {
       </div>
       {isTodoOpen && <Todo />}
       <div className="todo-box absolute">
-        <button className="button todo-btn cursor" onClick={handleTodoClick}>ToDo</button>
+        <button className="button todo-btn cursor" onClick={handleTodoClick}>Create Task List</button>
       </div>
       
       

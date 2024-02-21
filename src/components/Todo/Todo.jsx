@@ -50,7 +50,7 @@ export const Todo = () => {
           value={todo}
           onChange={handleChange}
           className="todo-input"
-          placeholder="add todo here..."
+          placeholder="Add New Task . . ."
           onKeyPress={handleKeyPress}
         />
       </div>

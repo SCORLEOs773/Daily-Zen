@@ -1,3 +1,21 @@
+/* Add this to your Task.css */
+.task-container {
+    position: relative;
+    /* Existing styles for task-container */
+  }
+  
+  .left-top-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 250px;
+    transform: translate(-10%,0); 
+    /* Move the image outside the screen to the left */
+    z-index: 1; /* Make sure the image is above other content */
+    /* Additional styles for your image */
+  }
+  
+
 .task-container {
     color: var(--text-color-primary);
     padding-top: 15rem;

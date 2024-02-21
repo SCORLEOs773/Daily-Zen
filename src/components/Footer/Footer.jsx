@@ -6,16 +6,16 @@ import linkedIn from "../../assets/logo/linkedIn-2.png";
 export const Footer = () => {
     return (
       <footer class="footer d-flex direction-column align-center">
-        <p>
+        <p style={{color:"white"}}>
           Made with{" "}
           <span role="img" aria-label="Love">
             ❤️
           </span>{" "}
-          by Prakash Sakari
+          by Sukhad Sharma
         </p>
         <div class="d-flex gap align-center padding-all-16">
           <a
-            href="https://github.com/prakashsakari/"
+            href="https://github.com/SCORLEOs773"
             class="link"
             target="_blank"
             rel="noreferrer"
@@ -27,7 +27,7 @@ export const Footer = () => {
             />
           </a>
           <a
-            href="https://twitter.com/prakashsakari"
+            href="https://twitter.com/Os773Scorle"
             class="link"
             target="_blank"
             rel="noreferrer"
@@ -39,7 +39,7 @@ export const Footer = () => {
             />
           </a>
           <a
-            href="https://www.linkedin.com/in/prakashsakari/"
+            href="https://www.linkedin.com/in/sukhadsharma/"
             class="link"
             target="_blank"
             rel="noreferrer"

@@ -52,6 +52,14 @@ export const Weather = () => {
 
   const { locality, temperature, skyStatus } = location;
 
+  function titleCase(str) {
+    str = str.toLowerCase().split(' ');
+    for (let i = 0; i < str.length; i++) {
+        str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+    }
+    return str.join(' ');
+  }
+
   return (
     <>
       <div className="weather-container">
@@ -62,7 +70,8 @@ export const Weather = () => {
           </span>
           <span className="heading-3 sky-status">
             {" "}
-            | {skyStatus[0]?.description}
+            {/* | {skyStatus[0]?.description} */}
+            {titleCase(skyStatus[0]?.description || "No Description")}
           </span>
         </div>
         <div className="locality">

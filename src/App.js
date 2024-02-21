@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import { Home, Task } from "./pages";
+import { Footer } from "./components";
 import {images} from "./db";
 import { useBrowser } from "./context/browser-context";
 
@@ -22,6 +23,7 @@ function App() {
   return (
     <div className='app' style={{backgroundImage: `url("${backgroundImage}")`}}>
       {name ? <Task /> : <Home />}
+      {/* <Footer /> */}
     </div>
   );
 }
